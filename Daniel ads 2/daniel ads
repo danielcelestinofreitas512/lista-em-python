@@ -70,5 +70,30 @@ class ListaComprasApp:
         self.btn_inserir.pack(side="left", padx=5)
         
         # Botão Editar
-        self.bnt_editar = tk.button
+        self.bnt_editar = tk.Button(
+            frame_botoes,
+            text="✏️ Editar",
+            font=("Arial", 11, "bold")
+            bgg="#27ae60", fg="white",
+            width=12, cursor="hand2",
+            relief="flat",
+            command=self.editar
+        )
+        self.btn_editar.pack(side="left", padx=5)
+        
+        # Botão Limpar
+        self.bnt_editar = tk.Button(
+            frame_botoes,
+            text=" Limpar",
+            font=("Arial", 11, "bold")
+            bgg="#27ae60", fg="white",
+            width=12, cursor="hand2",
+            relief="flat",
+            command=self.limpar
+        )
+        self.btn_limpar.pack(side="left", padx=5)
+        
+        
+        # ========== LISTA DE ITENS (TREEVIEW) ==========
+        
 
